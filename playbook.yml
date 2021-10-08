@@ -1,0 +1,10 @@
+---
+- name: Setting up server
+  hosts: experiment-lab
+  become: true
+  vars:
+    ansible_user: rulikalit
+    ansible_ssh_private_key_file: ~/.ssh/id_rsa
+  
+  roles:
+   - users
